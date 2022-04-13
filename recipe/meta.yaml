@@ -1,4 +1,4 @@
-{% set version = '1.1.1' %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/glmmML_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/glmmML/glmmML_{{ version }}.tar.gz
-  sha256: 255fe2640933d83ef7ea5813ba8006038c18195147d1f34f47a759210a674dd4
+  sha256: 8e44901ddeaa75a75c70dead2c3fe3c62d04b6be2ac3138a12d4599c54e53d8e
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -47,11 +47,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=glmmML
   license: GPL-3.0-or-later
-  summary: Binomial and Poisson regression for clustered data, fixed and random effects with
-    bootstrapping.
+  summary: Binomial and Poisson regression for clustered data, fixed and random effects with bootstrapping.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
