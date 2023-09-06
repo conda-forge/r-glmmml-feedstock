@@ -1,4 +1,4 @@
-{% set version = "1.1.4" %}
+{% set version = "1.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/glmmML_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/glmmML/glmmML_{{ version }}.tar.gz
-  sha256: bdb7d83505103514e5cfe23a0766e5bc9d508ccc74514da1be62f84284dd4677
+  sha256: 17d13d90eaea3ba3477ac2453ea5ced8d2cc20b2d00d097003e4f3b2ad79dde9
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
