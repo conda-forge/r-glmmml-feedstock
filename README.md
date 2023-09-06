@@ -3,6 +3,7 @@ About r-glmmml-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-glmmml-feedstock/blob/main/LICENSE.txt)
 
+
 About r-glmmml
 --------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=glmmML
 Package license: GPL-3.0-or-later
 
 Summary: Binomial and Poisson regression for clustered data, fixed and random effects with bootstrapping.
+
 About r-glmmml
 --------------
 
