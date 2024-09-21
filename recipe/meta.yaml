@@ -1,4 +1,4 @@
-{% set version = "1.1.6" %}
+{% set version = "1.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/glmmML_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/glmmML/glmmML_{{ version }}.tar.gz
-  sha256: 2710f56530de37a52a042645da76c8af075d66e04eaee9e18bf1e5f32f0b7958
+  sha256: b2e469154d6f94f426ff4c92367cce79697f900bc8cf5d596f684f976258861f
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
